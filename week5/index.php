@@ -25,9 +25,8 @@ $result = mysqli_query($connect, $query);
     while($record = mysqli_fetch_assoc($result))
     {
 
-        echo '<h2>'.$record['Name'].'</h2>
-            <div style=" height: 200px; background-color: '.$record['Hex'].';"></div>
-            ';
+        echo '<h2 style=" height: 200px;margin-bottom:10px; display: flex; align-items: center;
+    justify-content: space-around; background-color: '.$record['Hex'].';"><span>'.$record['Name'].'</span></h2>';
 
     }
 
