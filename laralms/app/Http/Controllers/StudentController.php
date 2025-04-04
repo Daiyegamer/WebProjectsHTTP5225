@@ -32,13 +32,10 @@ class StudentController extends Controller
      */
     public function store(StoreStudentRequest $request)
     {
-<<<<<<< HEAD
-      Student::create($request->validated());  
-      return redirect()->route('students.index');
-=======
+
        Student::create($request->validated());
         return redirect() -> route('students.index');
->>>>>>> 9143d765154daa65c25203581ff53a5cdba50e5f
+
     }
 
     /**
