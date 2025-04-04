@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+@extends('layout')
+@section('content')
+<h1>All Students</h1>
+<ul>
+@foreach ( $students as $student)
+    {{ $student -> fname }} {{ $student -> lname }}<br>
+    
+    @endforeach
+</ul>
+@endsection
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,4 +22,4 @@
     
     @endforeach
 </body>
-</html>
+</html> -->
