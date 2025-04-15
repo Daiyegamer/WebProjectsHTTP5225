@@ -6,6 +6,13 @@
     <input type="text" name="fname" placeholder="firstname">
     <input type="text" name="lname" placeholder="lastname">
     <input type="text" name="email" placeholder="Adil@example.com">
+
+    <select name="course" id="course">
+            @foreach ($courses as $course )
+                <option value="{{ $course -> id}}">{{ $course -> name }}</option>
+            @endforeach
+    </select>
+
     <input type="submit" value="Create">
 
 
